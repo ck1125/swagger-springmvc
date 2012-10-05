@@ -58,7 +58,7 @@ public class DocumentationController implements InitializingBean {
 		String documentationBasePath = basePath;
 		if (!basePath.endsWith("/"))
 			documentationBasePath += "/";
-		documentationBasePath += CONTROLLER_ENDPOINT;
+		// documentationBasePath += CONTROLLER_ENDPOINT;
 		
 		SwaggerConfiguration config = new SwaggerConfiguration(apiVersion,swaggerVersion,documentationBasePath);
 		apiReader = new MvcApiReader(wac, config);
